@@ -27,7 +27,7 @@ env:
 jobs:
   PBRP_CI:
     if: "(! contains(toJSON(github.event.commits.*.message), '[skip-ci]'))"
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
        - name: Auto Adapt Manifest
