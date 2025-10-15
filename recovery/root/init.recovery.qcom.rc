@@ -27,6 +27,10 @@
 
 import /init.recovery.qcom_decrypt.rc
 
+
+on init
+    setprop prepdecrypt.loglevel 2
+
 service overrideprops /system/bin/overrideprops.sh
     user root
     group root
